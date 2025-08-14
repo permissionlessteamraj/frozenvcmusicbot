@@ -65,7 +65,7 @@ API_ID = int(os.environ.get("API_ID"))
 API_HASH = os.environ.get("API_HASH")
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
 ASSISTANT_SESSION = os.environ.get("ASSISTANT_SESSION")
-OWNER_ID = int(os.getenv("OWNER_ID", "5268762773"))
+OWNER_ID = int(os.getenv("OWNER_ID", "7524032836"))
 
 # ——— Monkey-patch resolve_peer ——————————————
 logging.getLogger("pyrogram").setLevel(logging.ERROR)
@@ -178,7 +178,7 @@ def safe_handler(func):
             )
             print(error_text)
             # Log the error to support
-            await bot.send_message(5268762773, error_text)
+            await bot.send_message(7524032836, error_text)
     return wrapper
 
 
@@ -316,8 +316,8 @@ async def fetch_youtube_link_backup(query):
     except Exception as e:
         raise Exception(f"Backup Search API error: {e}")
     
-BOT_NAME = os.environ.get("BOT_NAME", "Frozen Music")
-BOT_LINK = os.environ.get("BOT_LINK", "https://t.me/vcmusiclubot")
+BOT_NAME = os.environ.get("BOT_NAME", "teamraj music")
+BOT_LINK = os.environ.get("BOT_LINK", "https://t.me/Teamrajmusicbot")
 
 from pyrogram.errors import UserAlreadyParticipant, RPCError
 
@@ -398,7 +398,7 @@ async def start_handler(_, message):
     reply_markup = InlineKeyboardMarkup(buttons)
 
     await message.reply_animation(
-        animation="https://envs.sh/IQW.jpg/IMG20250731607.jpg",
+        animation="https://www.kapwing.com/videos/689d64318da9b7af3a7f9244",
         caption=caption,
         parse_mode=ParseMode.MARKDOWN,
         reply_markup=reply_markup
