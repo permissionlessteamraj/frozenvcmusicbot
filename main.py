@@ -398,7 +398,7 @@ async def start_handler(_, message):
     reply_markup = InlineKeyboardMarkup(buttons)
 
     await message.reply_animation(
-        animation="https://www.kapwing.com/videos/689eb448fd0e151e126b7826",
+        animation="https://www.kapwing.com/videos/689eb8aaa886709519016b08",
         caption=caption,
         parse_mode=ParseMode.MARKDOWN,
         reply_markup=reply_markup
