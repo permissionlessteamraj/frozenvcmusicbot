@@ -1,7 +1,7 @@
 # main.py
 
 import logging
-from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, ChatMember
+
 from telegram.ext import (
     Application, CommandHandler, MessageHandler, filters, CallbackQueryHandler, ContextTypes, ConversationHandler
 )
