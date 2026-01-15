@@ -268,7 +268,7 @@ def iso8601_to_human_readable(iso_duration):
 
 async def fetch_youtube_link(query):
     try:
-        url = f"https://teenage-liz-frozzennbotss-61567ab4.koyeb.app/search?title={query}"
+        url = f"https://fastyoutubeapi.onrender.com/search?title={query}"
         async with aiohttp.ClientSession() as session:
             async with session.get(url) as response:
                 if response.status == 200:
